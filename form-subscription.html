@@ -6,7 +6,7 @@
 </head>
 <style>
     form {
-        max-width: 23vw;
+        max-width: 400px;
         background-color: #fffda9;
         color: #142faa;
     }
@@ -44,6 +44,7 @@
 
     select {
         width: 171px;
+        text-align: center;
     }
 
 </style>
@@ -54,8 +55,8 @@
         <span> <h3>Ngày sinh:</h3> <input type="text" size="20%"> </span>
         <span>
             <h3>Giới tính </h3>
-            <input type="radio" size="20%">Nam
-            <input type="radio" size="20%">Nữ
+            <input type="radio" size="20%" style="margin-right: -35px;">Nam
+            <input type="radio" size="20%" style="margin-right: -35px;">Nữ
 
         </span>
         <span    id="address">
@@ -74,7 +75,7 @@
 
 
         <span><h3>Email</h3> <input type="email"></span>
-        <span><h3>Điện thoại</h3> <input type="number" name="contact" id=""></span>
+        <span><h3>Điện thoại</h3> <input type="tel" name="contact" id=""></span>
         <div style="display: flex;justify-content: space-evenly;padding-bottom: 10px">
             <input type="submit" value="Đăng kí">
             <input type="reset" value="Nhập lại">
