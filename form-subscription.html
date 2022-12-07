@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    form {
+        max-width: 23vw;
+        background-color: #fffda9;
+        color: #142faa;
+    }
+
+    h4 {
+        padding-left: 20px;
+        color: #0433ff;
+        background-color: #d4fdd6;
+    }
+    h3 {
+        display: inline;
+        font-size: 15px;
+        width: 83px;
+    }
+
+    span {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    input[type=text] {
+        margin-left: 10px;
+        width: 171px;
+    }
+
+    #address {
+        display: flex;
+        align-items: flex-start;
+    }
+
+    #address > h3 {
+        margin: 0;
+    }
+
+    select {
+        width: 171px;
+    }
+
+</style>
+<body>
+    <form>
+        <h4>ĐĂNG KÝ HỌC VIÊN</h4>
+        <span><h3>Họ và tên:</h3> <input type="text" size="20%"> </span>
+        <span> <h3>Ngày sinh:</h3> <input type="text" size="20%"> </span>
+        <span>
+            <h3>Giới tính </h3>
+            <input type="radio" size="20%">Nam
+            <input type="radio" size="20%">Nữ
+
+        </span>
+        <span    id="address">
+            <h3>Địa chỉ </h3> <textarea style="width: 171px;height:50px"></textarea>
+        </span>
+        <span id="lopHoc"><h3>Lớp</h3>
+            <select name="lop" id="" style="">
+                <option value="--chon lop--">-Chọn lớp-</option>
+                <option value="a">a </option>
+                <option value="a">a </option>
+                <option value="a">a </option>
+                <option value="a">a </option>
+                <option value="a">a </option>
+            </select>
+        </span>
+
+
+        <span><h3>Email</h3> <input type="email"></span>
+        <span><h3>Điện thoại</h3> <input type="number" name="contact" id=""></span>
+        <div style="display: flex;justify-content: space-evenly;padding-bottom: 10px">
+            <input type="submit" value="Đăng kí">
+            <input type="reset" value="Nhập lại">
+        </div>
+
+    </form>
+</body>
+</html>
