@@ -7,7 +7,7 @@
 <style>
     form{
         border: 10px solid aqua;
-        max-width: 27vw;
+        max-width: 500px;
     }
     h1 {
         background-color: coral;
@@ -18,10 +18,11 @@
     }
 
     h4 {
-        display: inline;
-        width: 25%;
+        width: fit-content;
     }
-
+    span {
+        width: fit-content;
+    }
     .fullWidth {
         width: fit-content;
     }
@@ -37,6 +38,9 @@
         display: flex;
 
     }
+    .hobbyCheck{
+        width: fit-content;
+    }
 
     #button {
         display: flex;
@@ -47,10 +51,10 @@
 <form action="" method="get">
     <h1> SỞ THÍCH CỦA BẠN </h1>
     <fieldset>
-        <h4> Họ và tên <input type="text" name="yourName" class="fullWidth"></h4> <br>
-        <h4> Email <input type="text" name="email"  class="fullWidth"> </h4>
+        <h4> <span>Họ và tên</span> <input type="text" name="yourName"> </h4>
+        <h4> <span>Email</span> <input type="text" name="email"> </h4>
         <div id="hobby">
-            <h4>Sở thích </h4>
+            <h4><span> Sở thích</span> </h4>
             <div class="hobbyCheck">
                 <input type="checkbox" name="hobby"> Thể thao
                 <input type="checkbox" name="hobby"> Âm nhạc
